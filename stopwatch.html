@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS HarHamz</title>
+    <link rel="icon" href="img/clock.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="clock()">
+    <header>
+        <nav class="navbar navbar sticky-top navbar-expand-lg position-fixed z-1 start-0 end-0 navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand px-3" href="#">Ini Website Harry Hamara (221401042).</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="buffer"></div>
+
+    <!-- Main -->
+    <main>
+        <!-- Section Clock -->
+        <section class="container-fluid">
+            <div class="section-column">
+                <h1>Clock</h1>
+                <div id="clock" class="time"></div>
+            </div>
+        </section>
+
+        <!-- Section Stopwatch -->
+        <section class="container-fluid">
+            <div class="section-column">
+                <h1>Stopwatch</h1>
+                <div id="stopwatch" class="time"></div>
+                <br>
+                <input class="btn btn-primary" type="button" value="Mulai / Lanjut" onclick="start_stopwatch()">
+                <input class="btn btn-primary" type="button" value="Berhenti" onclick="stop_stopwatch()">
+                <input class="btn btn-primary" type="button" value="Reset" onclick="reset_stopwatch()">
+                <br><br>
+                <a class="btn btn-primary" href="index.html" role="button">Kembali</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="z-1 start-0 end-0">
+        <center><p>&copy; HarHamz, 2023</p></center>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
